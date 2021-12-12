@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+
+	 <link rel="stylesheet" href="reset.css">  
+	<link rel="stylesheet" href="style1.css"> 
+	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  	
+	<title>Product Comparison</title>
+</head>
+<body>
+	<section class="cd-intro">
+		<img src="logo.jpg" height="50px" width="100px">
+		<h1 class="header1">Products Comparison Table</h1>
+	</section> 
+	<video autoplay loop muted class="video">
+		<source src="background.mp4"/>
+	</video>
+	<section class="cd-products-comparison-table">
+		<header>
+			<h2 class="cmp">Compare Models</h2>
+		</header>
+
+		<div class="cd-products-table">
+			<div class="features">
+				<div class="top-info">Models</div>
+				<ul class="cd-features-list">
+					<li>Price in Rupees</li>
+					<li>Customer Rating</li>
+					<li>Processor</li>
+					<li>Brand</li>
+					<li>Display</li>
+					<li>Refresh Rate</li>
+					<li>Sim slots</li>
+					<li>Screen size</li>
+					<li>Ram</li>
+					<li>Weight</li>
+					<li>Storage</li>
+				</ul>
+			</div> 
+			
+			<div class="cd-products-wrapper">
+				<ul class="cd-products-columns">
+					<li class="product">
+						<div class="top-info">
+							
+							<img src="tab1.jpg" alt="product image">
+							<h3>HP x2 11 Tablet PC </h3>
+						</div>
+
+						<ul class="cd-features-list">
+							<li>59,990.00</li>
+							<li class="rate">4.8/5</li>
+              				<li>Snapdragon 7c Octa core</li>
+							<li>HP</li>
+							<li>27.9 cm (11") diagonal</li>
+							<li>60Hz</li>
+							<li>2 slots</li>
+							<li>11 Inches</li>
+							<li>8 GB</li>
+							<li>560 g</li>
+							<li>128GB</li>
+							
+						</ul>
+					</li> <!-- .product -->
+
+					<li class="product">
+						<div class="top-info">
+							
+							<img src="tab2.jpg" alt="product image">
+							<h3>Samsung Galaxy Tab</h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list">
+							<li>41,999.00</li>
+							<li class="rate">4/5</li>
+							<li>Snapdragon 778G</li>
+							<li>SAMSUNG</li>
+							<li>31.5 cm (12.4 inch) </li>
+							<li>60Hz</li>
+							<li>1 slot</li>
+							<li>12 inches</li>
+							<li>16 GB</li>
+							<li>610 g</li>
+							<li>512GB</li>
+						</ul>
+					</li> <!-- .product -->
+
+					<li class="product">
+						<div class="top-info">
+							
+							<img src="tab9.jpg" alt="product image">
+							<h3>2020 Apple iPad Air</h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list">
+							<li>50,900.00 </li>
+							<li class="rate">4.4/5</li>
+							<li>A14 Bionic chip</li>
+							<li>APPLE</li>
+							<li>27.69 cm (10.9-inch) </li>
+							<li>60Hz</li>
+							<li>1 slot</li>
+							<li>9 inches</li>
+							<li>8GB</li>
+							<li>905 g</li>
+							<li>256 GB</li>
+						</ul>
+					</li> <!-- .product -->
+
+					<li class="product">
+						<div class="top-info">
+							
+							<img src="tab4.png" alt="product image">
+							<h3>Lenovo Tab M10</h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list">
+							<li>13,999.00</li>
+							<li class="rate">3/5</li>
+							<li>650MHz PowerVR GE8320</li>
+							<li>LENEVO</li>
+							<li>10.3" FHD (1920 x 1200)</li>
+							<li>144Hz</li>
+							<li>1 slot</li>
+							<li>10.3 Inches</li>
+							<li>8 GB</li>
+							<li>460 g</li>
+							<li>256 GB</li>
+						</ul>
+					</li> <!-- .product -->
+
+					<li class="product">
+						<div class="top-info">
+							
+							<img src="tab5.jpg" alt="product image">
+							<h3>Apple iPad Mini</h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list">
+							<li>34,900.00</li>
+							<li class="rate">3.4/5</li>
+							<li>A12 Bionic chip</li>
+							<li>APPLE </li>
+							<li>20.1 cm Retina display </li>
+							<li>60Hz</li>
+							<li>1 slot</li>
+							<li>7.9-inch</li>
+							<li>8GB</li>
+							<li>660 g</li>
+							<li>512Gb</li>
+						</ul>
+					</li> <!-- .product -->
+
+					<li class="product">
+						<div class="top-info">
+							
+							<img src="tab13.jpg" alt="product image">
+							<h3>Wishtel IRA ZPAD </h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list">
+							<li>10,499.00</li>
+							<li class="rate">2/5</li>
+							<li>1.3 GHz quad core processor</li>
+							<li>WISHTEL </li>
+							<li>1080p Full HD, IPS LCD</li>
+							<li>60Hz</li>
+							<li>2 slots</li>
+							<li>10.1 inch</li>
+							<li>8GB</li>
+							<li>1.46 Kilograms</li>
+							<li>512 GB</li>
+						</ul>
+					</li> <!-- .product -->
+
+					<li class="product">
+						<div class="top-info">
+							
+							<img src="tab7.jpg" alt="product image">
+							<h3>Samsung Galaxy Tab A7 Lite</h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list">
+							<li>11,999.00</li>
+							<li class="rate">2.4/5</li>
+							<li>MT8768T processor</li>
+							<li>SAMSUNG</li>
+							<li> 1340 X 800 pixels resolution</li>
+							<li>120Hz</li>
+							<li>2 slots</li>
+							<li>8.7 inches</li>
+							<li>8GB</li>
+							<li>366 g</li>
+							<li>256GB</li>
+						</ul>
+					</li> <!-- .product -->
+
+					<li class="product">
+						<div class="top-info">
+							
+							<img src="tab8.jpg" alt="product image">
+							<h3>Lenovo Yoga Smart Tablet</h3>
+						</div> <!-- .top-info -->
+
+						<ul class="cd-features-list">
+							<li>20,999.00</li>
+							<li class="rate">4/5</li>
+							<li>Qualcomm Snapdragon 439</li>
+							<li>LENEVO</li>
+							<li>1920 x 1200 pixels resolution</li>
+							<li>120Hz</li>
+							<li>1 slot</li>
+							<li>10.1 inch</li>
+							<li>4GB</li>
+							<li>580g</li>
+							<li>64 GB</li>
+						</ul>
+					</li> <!-- .product -->
+				</ul> <!-- .cd-products-columns -->
+			</div> <!-- .cd-products-wrapper -->
+		</div> 
+		<div class="center">
+			<form>
+				<input type="button" value="Back to Homepage" onclick="history.back()" class="btn">
+			   </form>
+			</div>
+	</section> 
+</body>
+</html>

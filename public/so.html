@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      </head>
+
+<body>
+    <div id = "root"></div>
+    <script type = "text/babel">
+        class Main extends React.Component{
+            render(){
+                return(<div><ReactImage/><ReactCaption/><ReactLink/></div>)
+            }
+        }
+        function ReactImage(){
+            return (<img src="123.jpg"/>)
+        }
+        function ReactCaption(){
+            return (<p>First image</p>)
+        }
+        function ReactLink(){
+            return (<a href="https://google.com">click here</a>)
+        }
+        ReactDOM.render(<div><Main/></div>,document.getElementById("root"));
+        </script>
+        </body>
+        </html>

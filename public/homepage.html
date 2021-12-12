@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Product Comparison</title>
+
+</head>
+  <body>
+    
+   
+    <div class="grid-container">
+      <header class="row">
+        <div>
+          <a class="brand" href="homepage.html"><img src="logo.jpg" height="50px" width="100px"></a>
+          <a class="shop" href="homepage.html">SHOPify</a>
+        </div>
+       
+      </header>
+      
+      <main>
+        <div class="video-container">
+          <video autoplay loop muted>
+            <source src="PREDATOR.mp4" type="video/mp4">
+
+          </video>
+          </div>
+        <div>
+          <div class="row center">
+            <div class="card"  id="z">
+              <a href="laptop1.html">
+                <!-- image size: 680px by 830px -->
+                <img class="medium" src="laptop.jpg" alt="product"  height="200px" weight="100px"/>
+              </a>
+              <div class="card-body">
+                <a href="laptop1.html">
+                  <h2 >LAPTOP</h2>
+                </a>
+                <script>
+                  console.log("Alert message pops up for clicking on laptops");
+                  $('#z').click(function(){
+                    alert("You have selected laptops")
+                  });
+                </script>
+
+              </div>
+            </div>
+            <div class="card" id="p">
+              <a href="audio.html">
+                <!-- image size: 680px by 830px -->
+                <img class="medium" src="a.jpg" alt="product" height="200px" weight="100px" />
+              </a>
+              <div class="card-body">
+                <a href="audio.html">
+                  <h2 >HEADPHONES AND SPEAKERS</h2>
+                </a>
+                <script>
+                  console.log("Alert message pops up for clicking on audio");
+                  $('#p').click(function(){
+                    alert("You have selected audio")
+                  });
+                </script>
+
+              </div>
+            </div>
+            <div class="card" id="y">
+              <a href="telivisions.html">
+                <!-- image size: 680px by 830px -->
+                <img class="medium" src="tv.jpg" alt="product"  height="200px" weight="100px" />
+              </a>
+              <div class="card-body">
+                <a href="telivisions.html">
+                  <h2 >TELEVISION</h2>
+                </a>
+                <script>
+                  console.log("Alert message pops up for clicking on telivisions");
+                  $('#y').click(function(){
+                    alert("You have selected telivisions")
+                  });
+                </script>
+
+
+              </div>
+            </div>
+            <div class="card" id="q">
+              <a href="tablets.html">
+                <!-- image size: 680px by 830px -->
+                <img class="medium" src="tab.jpg" alt="product"  height="200px" weight="100px"/>
+              </a>
+              <div class="card-body">
+                <a href="tablets.html">
+                  <h2 >TABLETS</h2>
+                </a>
+                <script>
+                  console.log("Alert message pops up for clicking on tablets");
+                  $('#q').click(function(){
+                    alert("You have selected tablets")
+                  });
+                </script>
+
+              </div>
+            </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer">&copy; Copyright 2021
+          All right reserved</div>
+      </main>
+
+    </div>
+  </body>
+</html>

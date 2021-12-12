@@ -1,0 +1,127 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    #top{
+      font-family:'Lobster';
+      color: rgb(255, 255, 255);
+      text-shadow:rgb(255, 255, 255);
+       font-size: xx-large;
+       text-align: center;
+      grid-area: header;
+       background-color: #000000;
+   }
+   #container {
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction: row;
+   }
+    .login{
+      position:relative;
+      top:10%;
+        align-content : center;
+        font-family: 'Lobster';
+        color: rgb(255, 255, 255);
+        text-shadow:rgb(255, 255, 255); 
+        font-size: x-large;
+        text-align: center;
+        border: 0.3rem #9ea7a8 solid;
+        background-color: #8ba4a7a1;
+        border-radius: 0.5rem;
+        margin: auto;
+        height: 60vh;
+        width: 60vw;
+        min-width: fit-content;
+
+    }
+    body{
+      background-color: rgba(39, 39, 39, 0.945);
+  
+    }
+  
+  
+  
+              .card {
+    border: 0.3rem #dfd9d9 solid;
+    background-color: #a89e9e;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    height: 300px;
+    width: 220px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  .card-body > * {
+    margin-bottom: 0.5rem;
+  }
+  #reg{
+    size: 100%; 
+    font-size: 250%;
+    font-family: 'Lobster';
+    text-shadow: grey;
+    color: rgb(43, 41, 41);
+    text-overflow: ellipsis;
+  }
+
+  #em{
+    size: 100%; 
+    font-size: 100%;
+    font-family: 'Lobster';
+    text-shadow: grey;
+    color: rgb(43, 41, 41);
+    text-overflow: ellipsis;
+
+  }
+
+  #pa{
+    size: 100%; 
+    font-size: 100%;
+    font-family: 'Lobster';
+    text-shadow: grey;
+    color: rgb(43, 41, 41);
+    text-overflow: ellipsis;
+  }
+  .shop{
+    color: rgb(43, 41, 41);
+    text-shadow: grey;
+    font-family: 'Lobster';
+    transition: all 0.3s ease-in;
+  }
+  .shop:hover{
+  color: #EDD2F3;
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+  }
+  
+  </style>
+
+
+
+
+<div id= "top">
+    
+<h1><a class="shop">SHOPify</a></h1>
+</div>
+<% if (messages.error) { %>
+  <%= messages.error %>
+<% } %>
+
+<div class ="login">
+    <h1 id ="reg">Login</h1>
+<form action="/login" method="POST">
+  <div>
+    <label id = "em" for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label id ="pa" for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  
+  <button type="submit">Login</button>
+  <br>
+  <br>
+  <a id ="reg" href="/register">Not a member?? Sign up!!</a>
+</form>
+</div>
